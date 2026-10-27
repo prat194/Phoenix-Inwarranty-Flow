@@ -49,5 +49,19 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: newman/
 
+      - name: Send Email Notifications
+        if: always()
+        uses: dawidd6/action-send-mail@v23
+        with:
+          SMTP server address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: Phoenix-Inwarranty-Flow Test Execution Notification
+          to: prat3456@gmail.com
+          from: ${{ secrets.EMAIL_USERNAME }}
+          body: |
+              Hi,
+              Phoenix-Inwarranty-Flow Test Execution Notification.Please find the url:https://prat194.github.io/Phoenix-Inwarranty-Flow/
         
       
