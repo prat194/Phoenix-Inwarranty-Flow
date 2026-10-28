@@ -27,9 +27,9 @@ You can directly view the latest postman tests report at the GitHub page link - 
 
 ## Project Structure ##
 Postman Inwarranty Flow
-├─ Inwarranty-flow Collection-Jathin.postman_collection.json # Collection
+├─ Inwarranty-flow Collection.postman_collection # Collection
 ├─ QA.postman_environment.json # Environment file
-└─ testData.csv # Testdata file
+└─ testdata.csv # Testdata file
 
 ## HTML Report ##
 The Report will be created in newman folder
