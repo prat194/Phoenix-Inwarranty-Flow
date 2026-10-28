@@ -44,8 +44,8 @@ Install Node js and npm : https://nodejs.org/en
 Install newman using npm install -g newman
 Install newman-reporter-htmlextra using npm install -g newman-reporter-htmlextra
 Run the newman command :
-newman run 'Inwarranty-flow Collection-Jathin.postman_collection.json' \
+newman run 'Inwarranty-flow Collection.postman_collection' \
          -e QA.postman_environment.json \
-         -d testData.csv \
+         -d testdata.csv \
          -r cli,htmlextra \
          --reporter-htmlextra-export ./newman/index.html
